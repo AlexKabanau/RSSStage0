@@ -11,8 +11,7 @@ body {
   line-height: 24px;
 	font-weight: 500;
   color: #fff;
-  background-color: #E5E5E5;
-
+  /* background-color: #E5E5E5; */
 }
 
 .page-body {
@@ -64,7 +63,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 0 120px;
 }
 
 .page {
@@ -80,7 +79,7 @@ img {
   padding: 0;
 }
 .image-container {
-  background-color: #E5E5E5;
+  background-color: #fff;
   background-image: url('img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.png');
   background-position: top center;
 	background-repeat: no-repeat;
@@ -90,6 +89,8 @@ img {
   background-color: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
   margin-bottom: 32px;
+  width: 1440px;
+  margin: auto;
 }
 
 .main-navigation {
@@ -97,6 +98,7 @@ img {
   grid-template-columns: 216px 1fr 103px;
   font-size: 16px;
   line-height: 21px;
+  
   /* column-gap: 40px; */
 }
 .header-logo {
@@ -182,4 +184,140 @@ img {
   margin-bottom: 18px;
   margin-right: 18px;
   padding: 10px 32px;
+}
+
+.steps {
+  margin-bottom: 97px;
+}
+
+.steps-list {
+  display: flex;
+  justify-content: space-between;
+}
+.steps-item {
+  text-align: center;
+}
+.sub-title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+
+  color: #F2785C;
+
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+.svg-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  background-color: #F2785C;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moto {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #0D606F;
+}
+
+.destinations {
+  margin-bottom: 80px;
+}
+
+
+.image-footer-container {
+  background-color: #fff;
+  background-image: url('img/Rectangle\ 33.jpg');
+  background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.stories {
+  /* margin-top: -94px; */
+  background: rgba(255, 255, 255, 0.7);
+}
+.stories-list {
+  padding-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.story-item {
+  display: flex; 
+  gap: 40px;
+}
+
+
+.story-item img {
+  width: 400px;
+  height: 250px;
+  filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+}
+.story-title {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+
+  color: #0D606F;
+
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.story-text {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #0D606F;
+}
+.story-text a {
+  font-weight: 700;
+  text-decoration: underline;
+
+  color: #0D606F;
+}
+
+.more-button::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 23px;
+  top: 15px;
+  right: 160px;
+  background-image: url('img/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.more-button {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* margin-right: 18px; */
+  padding: 10px 32px;
+
+  padding-left: 81px;
+
+  position: relative;
 }
