@@ -164,7 +164,7 @@ button:hover {
   width: 892px;
   height: 422px;
 
-  margin-bottom: 330px;
+  margin-bottom: 302px;
 }
 .preview-title {
   font-family: 'Aleo';
@@ -185,7 +185,7 @@ button:hover {
   font-size: 20px;
   line-height: 24px;
 
-  margin-bottom: 46px;
+  margin-bottom: 48px;
 }
 .search-form {
   background: rgba(255, 255, 255, 0.7);
@@ -212,22 +212,32 @@ button:hover {
   line-height: 32px;
   
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   margin-right: 18px;
-  padding: 10px 32px;
+  padding: 14px 33px;
 }
 
 .steps {
-  margin-bottom: 97px;
+  margin-bottom: 74px;
 }
 
 .steps-list {
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
 }
 .steps-item {
   text-align: center;
 }
+.steps-item:nth-child(2) {
+  margin-left: 68px;
+}
+/* .steps-item:first-child {
+  margin-left: 10px;
+} */
+/* .steps-item:last-child {
+  margin-right: 10px;
+} */
 .sub-title {
   font-family: 'Red Hat Text';
   font-style: normal;
@@ -239,7 +249,7 @@ button:hover {
 
   text-align: center;
 
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 .svg-container {
   width: 100px;
@@ -260,11 +270,13 @@ button:hover {
   font-size: 20px;
   line-height: 24px;
 
+  margin-top: 30px;
+
   color: #0D606F;
 }
 
 .destinations {
-  margin-bottom: 80px;
+  margin-bottom: 44px;
 
   min-height: 1042px;
 
@@ -284,7 +296,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 60px;
 
-  transform: translateX(-532px);
+  transform: translateX(-538px);
 }
 
 .slider-item {
@@ -322,15 +334,15 @@ button:hover {
 }
 
 .destinations .button-container {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 /*Cлайдер-переключатели*/
 
 .slider-controls {
   position: absolute;
-  bottom: 116px;
-  right: 675px;
+  bottom: 139px;
+  right: 680px;
   width: 80px;
   display: flex;
   justify-content: space-between;
@@ -363,12 +375,15 @@ button:hover {
 .stories {
   background: rgba(255, 255, 255, 0.7);
 }
+.stories-title {
+  margin-bottom: 36px;
+}
 .stories-list {
   padding-top: 40px;
 
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .story-item {
@@ -426,9 +441,9 @@ button:hover {
   font-size: 24px;
   line-height: 32px;
   
-  margin-top: 40px;
+  margin-top: 39px;
   margin-bottom: 40px;
-  padding: 10px 32px;
+  padding: 13px 32px;
 
   padding-left: 81px;
 
@@ -457,5 +472,6 @@ button:hover {
   font-size: 16px;
   line-height: 21px;
 
-  margin-left: 450px;
+  margin-left: 470px;
+  margin-bottom: 22px;
 }
