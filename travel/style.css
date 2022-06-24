@@ -27,6 +27,10 @@ body {
 a {
 	text-decoration: none;
   color: #fff;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
 }
 
 img {
@@ -80,9 +84,36 @@ img {
   margin: 0;
   padding: 0;
 }
+header a:hover,
+.story-text a:hover {
+  color: black;
+}
+
+svg:hover path {
+  fill: black;
+}
+.steps .svg-container:hover path {
+  fill: black;
+  /* transition: all 1s; */
+}
+.transition-scale {
+  transition: all 1s;
+}
+.transition-scale:hover {
+  transform: scale(1.1);
+}
+button:hover {
+  /* color: black; */
+  background-image: linear-gradient(to bottom right, #0D606F, #19A2BB);
+  transition: all 1s;
+  /* background-color: #19A2BB; */
+}
+.button-slider:hover {
+  background: rgba(229, 231, 116, 0.5);
+}
 .image-container {
   background-color: #fff;
-  background-image: url('img/garrett-parker-DlkF4-dbCOU-unsplash1.png');
+  background-image: url('img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
   background-position: top center;
 	background-repeat: no-repeat;
 }
@@ -239,11 +270,13 @@ img {
 
   margin-left: -120px;
   margin-right: -120px;
+
+  position: relative;
 }
 
 .slider {
   /* min-height: 1042px; */
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
 }
 .slider-list {
@@ -263,13 +296,13 @@ img {
 
 
 .slide-japan {
-  background: url('img/Rectangle24.png') no-repeat;
+  background: url('img/Rectangle24.jpg') no-repeat;
 }
 .slide-spain {
-  background: url('img/Rectangle23.png') no-repeat;
+  background: url('img/Rectangle23.jpg') no-repeat;
 }
 .slide-usa {
-  background: url('img/Rectangle25.png') no-repeat;
+  background: url('img/Rectangle25.jpg') no-repeat;
 }
 
 .slide-title {
@@ -296,8 +329,8 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: -720px;
-  right: 920px;
+  bottom: 116px;
+  right: 675px;
   width: 80px;
   display: flex;
   justify-content: space-between;
