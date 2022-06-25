@@ -287,8 +287,6 @@ button:hover {
 }
 
 .slider {
-  /* min-height: 1042px; */
-  /* position: relative; */
   overflow: hidden;
 }
 .slider-list {
@@ -325,7 +323,6 @@ button:hover {
   line-height: 42px;
 
   color: #FFFFFF;
-
 
   margin: 0;
   margin-bottom: 26px;
