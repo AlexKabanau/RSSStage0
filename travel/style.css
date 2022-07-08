@@ -132,10 +132,7 @@ button:hover {
 .button-slider:hover {
   background: rgba(229, 231, 116, 0.5);
 }
-.button-prev,
-.button-next {
-  display: none;
-}
+
 
 
 .image-container {
@@ -393,6 +390,9 @@ button:hover {
 }
 
 /*Cлайдер-переключатели*/
+.switch-button {
+  display: none;
+}
 
 .slider-controls {
   position: absolute;
@@ -482,13 +482,21 @@ button:hover {
   font-size: 20px;
   line-height: 24px;
 
+  margin-bottom: 0;
+
   color: #0D606F;
 }
-.story-text a {
+.story-link {
+  font-family: 'Aleo';
+  font-style: normal;
+  
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
   text-decoration: underline;
 
   color: #0D606F;
+  margin-bottom: 9px;
 }
 
 .more-button::before {
@@ -637,7 +645,7 @@ button:hover {
   .burger-item {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 10px; 
+    margin-bottom: 7px; 
   }
   .burger-item:last-child {
     margin-bottom: 0;
@@ -690,6 +698,20 @@ button:hover {
     margin-bottom: 21px;
   }
 
+  .steps-item .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .steps-item:first-child .wrapper {
+    align-items: flex-start;
+  }
+  .steps-item:nth-child(2) .wrapper {
+    align-items: center;
+  }
+  .steps-item:nth-child(3) .wrapper {
+    align-items: flex-end;
+  }
+
   .svg-container {
     width: 70px;
     height: 70px;
@@ -714,6 +736,18 @@ button:hover {
     line-height: 12px;
       
     margin-top: 19px;
+
+    /* width: 100px; */
+  }
+  .steps-item:first-child .moto {
+    text-align: left;
+    width: 90px;
+  }
+  .steps-item:nth-child(2) .moto {
+    text-align: center;
+  }
+  .steps-item:nth-child(3) .moto {
+    text-align: end;
   }
   .steps-item {
     width: 120px;
@@ -721,11 +755,20 @@ button:hover {
   .steps-item:nth-child(2) {
     margin-left: 0;
 }
+.steps {
+  margin-bottom: 0;
+}
 
 .destinations {
   margin-left: 0px;
   margin-right: 0px;
+  margin-bottom: 21px;
 
+  min-height: auto;
+}
+
+.destinations-title {
+  margin-bottom: 17px;
 }
 
 .slider-list {
@@ -753,9 +796,59 @@ button:hover {
 .slide-usa {
   background: url('img/Rectangle35.jpg') no-repeat;
 }
+.slide-title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+
+  
+  padding-top: 9px;
+  
+}
+.slider-controls {
+
+  bottom: 52px;
+  right: 162px;
+  width: 36px;
+  
+}
+.button-slider {
+  
+  width: 8px;
+  height: 8px;
+  
+}
+
+.switch-button {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 25px;
+  background: 0 0 url(img/Vector.svg) no-repeat;
+  top: 129px;
+  border: none;
+  cursor: pointer;
+}
+.switch-button.disabled,
+.switch-button:disabled {
+  cursor: default;
+}
+.button-prev {
+  left: 11px;
+}
+button.button-next {
+  right: 11px;
+  transform: rotate(180deg);
+}
+
+.destinations .button-container {
+  margin-top: 0;
+}
 .more-button {  
-  margin-top: 39px;
-  margin-bottom: 40px;
+  margin-top: 11px;
+  margin-bottom: 0px; 
   padding: 7px 12px;
 
   padding-left: 28px;
@@ -786,7 +879,7 @@ button:hover {
   margin-bottom: 10px;
 }
 .stories-list {
-  padding-top: 20px;
+  padding-top: 10px;
 
   display: flex;
   flex-direction: column;
@@ -800,6 +893,9 @@ button:hover {
 }
 .story-item { 
   gap: 10px;
+}
+.story-item .wrapper {
+  margin-top: 5px;
 }
 .story-title {
   
@@ -818,12 +914,51 @@ button:hover {
   color: #0D606F;
 
   width: 195px;
-  height: 102px;
+  height: 78px;
   overflow: hidden;
+  margin-bottom: 0;
+}
+.story-link {
+  font-family: 'Aleo';
+  font-style: normal;
+  
+  font-size: 9px;
+  line-height: 11px;
+  font-weight: 700;
+  text-decoration: underline;
+
+  color: #0D606F;
+  margin-bottom: 9px;
 }
 
+.stories .more-button {
+  margin-bottom: 13px;;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list {
+  width: 141px;
+  margin-left: 10px;
+
+  padding-top: 16px;
+  padding-bottom: 15px;
+}
+
+.footer-copyright {
+  font-size: 16px;
+  line-height: 21px;
+
+  margin-left: 470px;
+  margin-bottom: 22px;
+}
 
   .footer-copyright {
     display: none;
   }
+
+
 }  
